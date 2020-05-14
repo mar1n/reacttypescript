@@ -5,9 +5,9 @@ interface list {
 }
 
 const App: React.FC = () => {
-  const [search, setSearch] = useState<string>('');
-  const [list, setList] = useState<list[]>([]);
+  const [search, setSearch] = useState<string>("");
   const [data, setData] = useState<list[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
   useEffect(() => {
     async function getData() {
       try {
@@ -16,6 +16,7 @@ const App: React.FC = () => {
         );
         let data = await fetchCall.json();
         setData(data);
+        setLoading(false);
       } catch (e) {
         console.log(e);
       }
@@ -24,20 +25,25 @@ const App: React.FC = () => {
   }, []);
 
   const searchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    let search = data.filter((word) => word.name.includes(e.target.value));
     setSearch(e.target.value);
-    setList(search);
   };
+
   return (
     <div className="App">
       <p>hello world</p>
       <p>{search}</p>
       <input value={search} onChange={searchChange} />
-      {list.map((details) => (
-        <div key={details.id} className="details">
-          {details.name}
-        </div>
-      ))}
+      {loading ? (
+        <p>Loading...</p>
+      ) : (
+        data
+          .filter((word) => word.name.includes(search))
+          .map((details) => (
+            <div key={details.id} className="details">
+              {details.name}
+            </div>
+          ))
+      )}
     </div>
   );
 };
