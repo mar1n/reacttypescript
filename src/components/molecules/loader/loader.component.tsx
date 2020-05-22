@@ -1,12 +1,12 @@
 import React from 'react'
-import StyledLoader from './loader.styles'
+import {StyledLoader} from './loader.styles'
 
-const Loading = () => {
+const Loading = (): JSX.Element => {
     return (
         <StyledLoader>
-            <p>Loading...</p>
+            Loading...
         </StyledLoader>
     )
 }
 
-export default Loading
+export default Loading as React.FC

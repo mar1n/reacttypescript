@@ -3,8 +3,8 @@ import Input from './input.component'
 
 export default  {
     component: Input,
-    title: 'Input',
+    title: 'Atom|Input',
     excludeStories: /.*Data$/,
 }
 
-export const Default = () => <Input value='' onChange={(e) => console.log(e)} />
+export const Search = () => <Input value='' onChange={(e) => console.log(e)} />
