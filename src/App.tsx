@@ -45,4 +45,4 @@ const App: React.FC = () => {
   );
 };
 
-export default hot(App)
+export default hot(App) as React.FC
