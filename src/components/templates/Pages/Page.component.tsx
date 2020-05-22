@@ -1,5 +1,5 @@
 import React from "react";
-import * as Styled from "./Page.styles";
+import { Container } from "./Page.styles";
 
 interface PageProps {
   children: React.ReactNode;
@@ -8,7 +8,7 @@ interface PageProps {
 function Page(props: PageProps): JSX.Element {
   const { children } = props;
 
-  return <Styled.Container>{children}</Styled.Container>;
+  return <Container>{children}</Container>;
 }
 
 export default Page as React.FC<PageProps>;

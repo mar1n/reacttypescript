@@ -1,9 +1,9 @@
 import React from 'react'
 import Page from './Page.component'
 
-import input from '../../atoms/input/input.component'
-import loader from '../../atoms/input/input.component'
-import input from '../../atoms/input/input.component'
+import Input from '../../atoms/input/input.component'
+import Loading from '../../molecules/loader/loader.component'
+import List from '../../organisms/list/list.component'
 
 export default {
     component: Page,
@@ -11,4 +11,9 @@ export default {
     exludeStories: /.*Data$/,
 }
 
-export const WebPage = () => <Page />
+export const WebPage = () => 
+        <Page>
+            <Input />
+            <Loading />
+            <List />
+        </Page>

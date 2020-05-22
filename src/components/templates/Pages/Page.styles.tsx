@@ -8,4 +8,4 @@ export const Container = styled.main`
   height: 100vh;
   width: 100%;
   flex-direction: column;
-`
+`;
