@@ -1,13 +1,14 @@
-import React from 'react'
-import Page from './Page.component'
+import React from "react";
+import Page from "./Page.component";
 
 export default {
-    component: Page,
-    title: 'Templates|Pages',
-    exludeStories: /.*Data$/,
-}
+  component: Page,
+  title: "Templates|Pages",
+  exludeStories: /.*Data$/,
+};
 
-export const WebPage = () => 
-        <Page>
-            <p>Page Content</p>
-        </Page>
+export const WebPage = () => (
+  <Page>
+    <p>Page Content</p>
+  </Page>
+);

@@ -1,19 +1,18 @@
-import React from 'react'
+import React from "react";
 
-import StyledInput from './input.styles'
+import StyledInput from "./input.styles";
 
 type InputProps = {
-    value: string,
-    onChange: (event: string) => void
-}
+  value: string;
+  onChange: (event: string) => void;
+};
 
 const Input = ({ value, onChange }: InputProps) => {
+  return (
+    <div>
+      <StyledInput value={value} onChange={(e) => onChange(e.target.value)} />
+    </div>
+  );
+};
 
-    return (
-        <div>
-            <StyledInput value={value} onChange={e => onChange(e.target.value)} />
-        </div>
-    )
-}
-
-export default Input as React.FC<InputProps>
+export default Input as React.FC<InputProps>;

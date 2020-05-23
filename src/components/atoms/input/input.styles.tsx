@@ -1,7 +1,7 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 const StyledInput = styled.input`
-    background-color: orange;
+  background-color: orange;
 `;
 
-export default StyledInput
+export default StyledInput;

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import getData from "./modules/api/github/get-data/get-data";
+import getData from "../../modules/api/github/get-data/get-data";
 import { hot } from "react-hot-loader/root";
-import { Input, Loader, Page, List } from "./components";
+import { Input, Loader, Page, List } from "../../components";
 
 type list = {
   id: number;

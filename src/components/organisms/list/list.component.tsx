@@ -1,5 +1,5 @@
 import React from "react";
-import {StyledList} from "./list.styles";
+import { StyledList } from "./list.styles";
 
 type ListProps = {
   data: any[];

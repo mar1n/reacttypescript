@@ -1,6 +1,5 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const StyledLoader = styled.div`
-    background-color: skyblue;
+  background-color: skyblue;
 `;
-

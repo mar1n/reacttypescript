@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Homepage renders as expected 1`] = `
+<div
+  className="App"
+>
+  <main
+    className="sc-AxhCb edBHIa"
+  >
+    <div>
+      <input
+        className="sc-AxjAm kXckSO"
+        onChange={[Function]}
+        value=""
+      />
+    </div>
+    <div
+      className="sc-AxirZ bNRZuW"
+    >
+      Loading...
+    </div>
+  </main>
+</div>
+`;
