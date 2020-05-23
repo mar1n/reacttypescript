@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Atom|Input Search 1`] = `
+<div>
+  <input
+    className="sc-AxjAm kDObzu"
+    onChange={[Function]}
+    value=""
+  />
+</div>
+`;
+
+exports[`Storyshots Molecules|Loading Loader 1`] = `
+<div
+  className="sc-AxirZ ddrrlK"
+>
+  Loading...
+</div>
+`;
+
+exports[`Storyshots Organisms|List Print List 1`] = `
+<div
+  className="sc-AxiKw fBVXkl"
+>
+  <div
+    className="details"
+  >
+    Szymon
+  </div>
+  <div
+    className="details"
+  >
+    Patrick
+  </div>
+  <div
+    className="details"
+  >
+    Mr X
+  </div>
+</div>
+`;
+
+exports[`Storyshots Templates|Pages Web Page 1`] = `
+<main
+  className="sc-AxhCb szNEq"
+>
+  <p>
+    Page Content
+  </p>
+</main>
+`;
